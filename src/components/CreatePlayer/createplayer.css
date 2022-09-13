@@ -1,0 +1,13 @@
+.create-player {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 200px;
+}
+
+.create-player__form-element {
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 2px solid rgb(2, 131, 77);
+}
