@@ -1,4 +1,4 @@
-.button-main {
+.button {
     padding: 8px 12px;
     border-radius: 4px;
     background-color: var(--preDarkColor);
@@ -12,7 +12,7 @@
     display: block;
     margin-bottom: 12px;
 }
-.button-main::after {
+.button::after {
     content: '';
     width: 100%;
     height: 100%;
@@ -27,6 +27,6 @@
     border-radius: 4px;
 }
 
-.main-menu a:hover .button-main::after {
+.button a:hover .button::after {
     translate: 0 8px;
 }

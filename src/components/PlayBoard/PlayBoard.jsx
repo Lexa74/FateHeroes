@@ -3,6 +3,7 @@ import { Card } from "../Card/Card";
 import { Pack } from "../Pack/Pack";
 import { GameInfo } from "../GameInfo/GameInfo";
 import './playboard.css';
+import { Button } from "../UI/Button/Button";
 
 export function PlayBoard() {
 
@@ -34,7 +35,7 @@ export function PlayBoard() {
                 </div>
             </div>
             <div className="playboard__finish-round">
-                
+                <Button name={'Завершить раунд'} onClick={() => {}}></Button>
             </div>
         </div>
     )
