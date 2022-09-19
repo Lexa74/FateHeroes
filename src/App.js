@@ -15,17 +15,10 @@ function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-          </ul>
-        </nav>
-
         <Routes>
           <Route path="/create-player" element={<CreatePlayer />} />
           <Route path="/" element={<Home />} />
+          <Route path="/playboard" element={<PlayBoard />} />
         </Routes>
       </div>
     </Router>

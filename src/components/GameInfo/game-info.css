@@ -1,0 +1,12 @@
+.game-info {
+    border-radius: 4px;
+    background-color: var(--preDarkColor);
+    color: var(--textLightColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    gap: 8px;
+    flex-direction: column;
+}

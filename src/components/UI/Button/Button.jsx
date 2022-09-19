@@ -5,6 +5,6 @@ export const Button = (props) => {
 
 
     return (
-        <button className="button">{props.name}</button>
+        <button className={"button-" + props.direction}>{props.name}</button>
     )
 }

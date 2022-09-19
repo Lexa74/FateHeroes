@@ -1,25 +1,41 @@
 import React from "react";
+import { Card } from "../Card/Card";
+import { Pack } from "../Pack/Pack";
+import { GameInfo } from "../GameInfo/GameInfo";
+import './playboard.css';
 
 export function PlayBoard() {
 
 
     return  (
         <div className="playboard">
-            <div className="playboard__player player">
-                <div className="player__info">info</div>
-                <div className="game-info">
-                    В колоде карт: 1
-                    На доске карт: 2
-                    Сумма атаки: 3
-                    Сумма защиты: 5
+            <div className="playboard__navigation navigation">
+                <div className="playboard__game-info">
+                    <GameInfo numberRound={1} scorePlayer={0} scoreEnemy={0}/>
                 </div>
-                <div className="card-board">
-                    <div className="card-in-hands"></div>
-                    <div className="card-stack"></div>
+                <div className="playboard__pack">
+                    <Pack></Pack>
                 </div>
-                <div className="playboard__player info">info</div>
             </div>
-            <div className="playboard__enemy">Enemy</div>
+            <div className="playboard__cards">
+                <div className="playboard__enemy-cards">
+                    <p className="playboard__label">Карты противника:</p>
+                    <div className="cards-container">
+                        <Card power={5}></Card>
+                        <Card power={2}></Card>
+                    </div>
+                </div>
+                <div className="playboard__my-cards">
+                    <p className="playboard__label">Карты игрока:</p>
+                    <div className="cards-container">
+                        <Card power={4}></Card>
+                        <Card power={8}></Card>
+                    </div>
+                </div>
+            </div>
+            <div className="playboard__finish-round">
+                
+            </div>
         </div>
     )
   }

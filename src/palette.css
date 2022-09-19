@@ -1,9 +1,9 @@
 :root {
-    --lightColor: #A3E7FC;
-    --darkColor: #2F0601;
-    --preDarkColor: #553A41;
-    --middleColor: #32908F;
-    --preLightColor: #26C485;
+    --lightColor: #F0EDEE;
+    --darkColor: #0A090C;
+    --preDarkColor: #07393C;
+    --middleColor: #2C666E;
+    --preLightColor: #90DDF0;
     --textLightColor: white;
     --textDarkColor: black; 
 }
